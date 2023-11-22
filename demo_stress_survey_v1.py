@@ -347,10 +347,10 @@ with tab1:
             st.header("Let's take this survey and find out.")
             st.button('Begin the Survey', on_click=set_state, args=[1])
 
+            st.markdown("""---""")
+
             st.write("We're taking you to answer some questions and get your 'Perceived Stress Scale'. It was designed to measure how unpredictable, uncontrollable, or overloaded you find your life.")
             st.write("You'll be asked to consider how you’ve felt over the last month. There are 10 questions in which you can circle how often you have felt a certain way.")
-            
-            st.markdown("""---""")
         
             st.write("If you want to learn more about Perceived Stress Scale, check the link below.")
             pss_link = "https://www.das.nh.gov/wellness/docs/percieved%20stress%20scale.pdf"
@@ -364,10 +364,10 @@ with tab1:
             st.header("ลองทำแบบสอบถามเพื่อวัดระดับความเครียดของคุณดูสิ")
             st.button('เริ่มทำแบบสอบถาม', on_click=set_state, args=[1])
 
+            st.markdown("""---""")
+
             st.write("เราจะพาคุณไปวัดระดับ 'ความรู้สึกเครียด' ที่ถูกออกแบบมาเพื่อวัดว่าคุณรู้สีกว่าชีวิตคุณนั้นไม่แน่นอนและควบคุมไม่ได้ขนาดไหน")
             st.write("แบบทดสอบจะประกอบไปด้วย 10 คำถามเกี่ยวกับประสบการณ์ในช่วง 1 เดือนที่ผ่านมา")
-            
-            st.markdown("""---""")
         
             st.write("ข้อมูลเกี่ยวกับแบบทดสอบความรู้สึกเครียด หรือ 'Perceived Stress Scale' (ภาษาอังกฤษ)")
             pss_link = "https://www.das.nh.gov/wellness/docs/percieved%20stress%20scale.pdf"
