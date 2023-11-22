@@ -190,7 +190,7 @@ def display_bar_chart(stress_level):
 def display_feature_chart():
     Factors = ["Loneliness", "Everyday-discrimination", "Hunger", "Other"]
     df_importance = pd.DataFrame(dict(Importance=[74.4, 17.8, 6.6, 1.2], Factors=Factors))
-    fig = px.funnel(df_importance, x='Importance', y='Factors')
+    fig = px.funnel(df_importance, x='Importance', y='Factors', title='Feature Importance (%)')
     
     st.plotly_chart(fig)
 
