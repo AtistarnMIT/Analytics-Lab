@@ -96,7 +96,7 @@ def display_result():
     # Display the result
     display_bar_chart(stress_level)
     
-    st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
+    st.markdown("""---""")    
     
     st.subheader('What causes stress?')
 
@@ -118,7 +118,7 @@ def classify_stress(total_response):
         st.write("You are likely to feel on top of your game over the last month. Low stress levels are associated with a perception that life events are predictable, controllable, and not overwhelming.")
         st.write("You are doing a great job of managing your stress. However, if you ever feel that is starting to change, you can revisit this survey and reevaluate your score.")
         
-        st.st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
+        st.markdown("""---""")
         
         st.subheader("55.5% of people also have the same level of stress.")
         
@@ -137,7 +137,7 @@ def classify_stress(total_response):
         moderate_link = "https://www.asianwomenforhealth.org/mental-health.html"
         st.markdown(f"[Mental Health Resources]({moderate_link})")
         
-        st.st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
+        st.markdown("""---""")
         
         st.subheader("38.7% of people also have the same level of stress.")
         
@@ -156,7 +156,7 @@ def classify_stress(total_response):
         moderate_link = "https://www.asianwomenforhealth.org/mental-health.html"
         st.markdown(f"[Mental Health Resources]({moderate_link})")
         
-        st.st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
+        st.markdown("""---""")
         
         st.subheader("5.8% of people also have the same level of stress.") 
         st.write("According to the All of Us Research Program Survey (2023)")
@@ -174,8 +174,6 @@ def display_bar_chart(stress_level):
     stress_class = {1:'Low Stress', 2:'Moderate Stress', 3:'High Stress'}
 
     df = pd.DataFrame(data)
-    
-    
 
     # Create a bar chart using Plotly
     fig = px.bar(df, x='Category', y='Value',
@@ -209,13 +207,13 @@ with tab1:
         st.write("You'll be asked to consider how you’ve felt over the last month. There are 10 questions in which you can circle how often you have felt a certain way.")
         st.button('Begin the Survey', on_click=set_state, args=[1])
         
-        st.st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
+        st.markdown("""---""")
     
         st.write("If you want to learn more about Perceived Stress Scale, check the link below.")
         pss_link = "https://www.das.nh.gov/wellness/docs/percieved%20stress%20scale.pdf"
         st.markdown(f"[Find out what Perceived Stress Scale is]({pss_link})")
         
-        st.st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
+        st.markdown("""---""")
         
         st.write("Disclaimer: The scores on the following self-assessment do not reflect any particular diagnosis or course of treatment. They are meant as a tool to help assess your level of stress. If you have any further concerns about your current well being, you may seek professional help for guidance.")
         
