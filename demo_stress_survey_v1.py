@@ -288,7 +288,7 @@ def classify_stress(total_response):
 
             st.markdown("""---""")
             
-            st.subheader("5.8% ของคนที่ทำแบบสำรวจมีระดับความเครียดปานกลาง")
+            st.subheader("5.8% ของคนที่ทำแบบสำรวจมีระดับความเครียดสูง")
             
             st.write("ข้อมูลจาก All of Us Research Program Survey (ปี 2023)")
         
