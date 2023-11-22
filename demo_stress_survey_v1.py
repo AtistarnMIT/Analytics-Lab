@@ -188,9 +188,9 @@ def display_bar_chart(stress_level):
     st.plotly_chart(fig)
 
 def display_feature_chart():
-    factors = ["Loneliness", "Everyday-discrimination", "Hunger", "Other"]
-    df_importance = pd.DataFrame(dict(number=[74.4, 17.8, 6.6, 1.2], factors=factors))
-    fig = px.funnel(df_importance, x='number', y='factors')
+    Factors = ["Loneliness", "Everyday-discrimination", "Hunger", "Other"]
+    df_importance = pd.DataFrame(dict(Importance=[74.4, 17.8, 6.6, 1.2], Factors=Factors))
+    fig = px.funnel(df_importance, x='Importance', y='Factors')
     
     st.plotly_chart(fig)
 
